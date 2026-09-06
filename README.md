@@ -18,3 +18,33 @@ Note: After modifying to increase experience points and leveling up, you cannot 
 
 <img width="752" height="390" alt="image" src="https://github.com/user-attachments/assets/0c478fae-986b-488d-8526-297901290dba" />
 
+---
+
+## CRYSTAR_AllMap_Speed.CT
+
+这份表在原表基础上额外提供了两个功能：
+
+- **All Map Reveal**：进入关卡后直接显示完整地图，不再随着角色移动逐步点亮。
+- **Global Speed x2**：全局 2 倍速，可通过 `Speed Multiplier` 调整倍率。
+
+### 使用方法
+
+1. 用 Cheat Engine 打开 `CRYSTAR_AllMap_Speed.CT`
+2. 附加到 `CRYSTAR.exe`
+3. 按需勾选：
+   - `All Map Reveal`：建议在进入关卡前开启，或开启后重进一次关卡
+   - `Global Speed x2`：开启后立即生效
+4. 如需调整速度倍率，先启用 `Global Speed x2`，再修改 `Speed Multiplier` 数值
+
+### 说明
+
+- `All Map Reveal` 作用于地图生成阶段，因此在部分场景需要重进关卡才能看到完整效果。
+- `Global Speed x2` 通过修改 `Time.get_deltaTime` 的返回值实现，不会修改游戏文件或存档。
+- 建议先备份存档再使用修改器。
+
+### Notes
+
+- `All Map Reveal` affects the map generation stage, so you may need to re-enter a stage after enabling it.
+- `Global Speed x2` works by modifying the return value of `Time.get_deltaTime`; it does not modify game files or saves.
+- It is recommended to back up your save data before using this table.
+
